@@ -1,0 +1,19 @@
+{
+    "name": "backend-node",
+    "version": "1.0.0",
+    "description": "Mocking strategy demo",
+    "main": "dist/app.js",
+    "scripts": {
+        "start": "node dist/app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "typescript": "^5.0.0",
+        "ts-node": "^10.9.1",
+        "dotenv": "^16.0.3",
+        "@types/node": "^18.0.0"
+    }
+}
