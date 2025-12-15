@@ -4,16 +4,27 @@
     "description": "Mocking strategy demo",
     "main": "dist/app.js",
     "scripts": {
-        "start": "node dist/app.js",
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "tsc",
+        "start": "node dist/server.js",
+        "dev": "ts-node src/server.ts",
+        "console": "ts-node src/console-runner.ts"
     },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "devDependencies": {
-        "typescript": "^5.0.0",
-        "ts-node": "^10.9.1",
+    "dependencies": {
+        "@google/generative-ai": "^0.24.1",
+        "cors": "^2.8.5",
         "dotenv": "^16.0.3",
-        "@types/node": "^18.0.0"
+        "express": "^5.2.1",
+        "socket.io": "^4.8.1"
+    },
+    "devDependencies": {
+        "@types/cors": "^2.8.19",
+        "@types/express": "^5.0.6",
+        "@types/jest": "^30.0.0",
+        "@types/node": "^18.0.0",
+        "@types/socket.io": "^3.0.1",
+        "jest": "^30.2.0",
+        "ts-jest": "^29.4.6",
+        "ts-node": "^10.9.1",
+        "typescript": "^5.0.0"
     }
 }
